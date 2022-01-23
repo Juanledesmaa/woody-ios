@@ -3,15 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		42EC1E611475B6CDD14CC08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08D9F86A03FA6BBB9229FDF7 /* Assets.xcassets */; };
-		7E26E8C37B45C588E85518ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47154C9150807A82060D54C2 /* Main.storyboard */; };
 		90C389FAA3FD2EDB58D929C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F58F2D7A0B52EDF004FBA17 /* AppDelegate.swift */; };
 		977A0B8DB526A6AE2DF0FE2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70EDD0E4822B9015A46D4B2 /* ViewController.swift */; };
 		9BE3D96802C2505441614A9B /* ForkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825BE5F40AEC309D6DE285C /* ForkAppTests.swift */; };
+		C6A27584279D21B900A40093 /* PureLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A27582279D21B300A40093 /* PureLayout.xcframework */; };
+		C6A27585279D21B900A40093 /* PureLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6A27582279D21B300A40093 /* PureLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FDCCBC9E3CF339BD2E649CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424E8FC4708ACB2CBB0BE05A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -25,18 +26,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C6A27586279D21B900A40093 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6A27585279D21B900A40093 /* PureLayout.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		08D9F86A03FA6BBB9229FDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0DC3F93528B58CFB0272C655 /* WoodyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WoodyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC3F93528B58CFB0272C655 /* WoodyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoodyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F58F2D7A0B52EDF004FBA17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3825BE5F40AEC309D6DE285C /* ForkAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkAppTests.swift; sourceTree = "<group>"; };
 		3B5637A148F241D68B829FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		516DF167980AD29B473F599E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73F73CE1F5AE00CB292CA6F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		90F3E2EA952B024C8DC40408 /* Woody.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Woody.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F3E2EA952B024C8DC40408 /* Woody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woody.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A27582279D21B300A40093 /* PureLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PureLayout.xcframework; path = Carthage/Build/PureLayout.xcframework; sourceTree = "<group>"; };
 		E70EDD0E4822B9015A46D4B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E912CD6F1464815AE8F4617A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6A2757E279D20D400A40093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A27584279D21B900A40093 /* PureLayout.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		16AF7FBB20BD3B19AE60F7E1 /* WoodyTests */ = {
@@ -88,6 +114,7 @@
 				731B2A6BFFB631F6EFCA8C5D /* Woody */,
 				16AF7FBB20BD3B19AE60F7E1 /* WoodyTests */,
 				333027525E16888187263FCF /* Products */,
+				C6A2757A279D20D300A40093 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				424E8FC4708ACB2CBB0BE05A /* LaunchScreen.storyboard */,
-				47154C9150807A82060D54C2 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -107,6 +133,14 @@
 				E70EDD0E4822B9015A46D4B2 /* ViewController.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		C6A2757A279D20D300A40093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6A27582279D21B300A40093 /* PureLayout.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FA8A2B1949A2CF5073376A8A /* Resources */ = {
@@ -129,6 +163,9 @@
 				304A4110AC3CD54474921CD3 /* Sources */,
 				A0F22ABFA6B7D8B134318DB2 /* Swiftlint */,
 				77AB4A37737007DEEE3B62BC /* Resources */,
+				C6A2757E279D20D400A40093 /* Frameworks */,
+				C6A27586279D21B900A40093 /* Embed Frameworks */,
+				C6A27587279D223600A40093 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -161,7 +198,7 @@
 		8F930D74240621535BBADCB3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1250;
 			};
 			buildConfigurationList = 0685C75795AF2B4468D4BEA1 /* Build configuration list for PBXProject "Woody" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -188,7 +225,6 @@
 			files = (
 				42EC1E611475B6CDD14CC08C /* Assets.xcassets in Resources */,
 				FDCCBC9E3CF339BD2E649CDD /* LaunchScreen.storyboard in Resources */,
-				7E26E8C37B45C588E85518ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +248,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if mint list | grep -q 'SwiftLint'; then\nmint run SwiftLint swiftlint autocorrect\nmint run SwiftLint swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		C6A27587279D223600A40093 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -252,14 +306,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		47154C9150807A82060D54C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				516DF167980AD29B473F599E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -288,6 +334,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -319,7 +366,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WoodyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +383,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WoodyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +420,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -413,7 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Woody/Resources/Metadata/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,7 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Woody/Resources/Metadata/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,11 +10,16 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
 
-  var window: UIWindow?
-
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-    return true
-  }
+    func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let rootMockViewController = ViewController()
+        rootMockViewController.view.backgroundColor = .cyan
+        window.rootViewController = rootMockViewController
+        window.makeKeyAndVisible()
+        self.window = window
+        return true
+    }
 }
