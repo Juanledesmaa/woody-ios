@@ -6,14 +6,13 @@
 //  Copyright © 2019 muzix. All rights reserved.
 //
 
-import PureLayout
 import UIKit
+import PureLayout
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         let mockView = UIView()
         view.addSubview(mockView)
         mockView.backgroundColor = .red
