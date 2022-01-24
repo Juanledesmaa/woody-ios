@@ -1,14 +1,14 @@
 //
-//  ForkAppTests.swift
-//  ForkAppTests
+//  WoodyTests.swift
+//  WoodyTests
 //
-//  Created by muzix on 9/8/19.
-//  Copyright © 2019 muzix. All rights reserved.
+//  Created by Juan Ledesma on 01/24/22.
+//  Copyright © 2022 Juan Ledesma. All rights reserved.
 //
 
 import XCTest
 
-class ForkAppTests: XCTestCase {
+class WoodyTests: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
